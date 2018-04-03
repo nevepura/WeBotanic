@@ -1,0 +1,71 @@
+body{
+  font-family: Garamond, "Times New Roman", serif;
+}
+
+#logo{
+  margin-left: 1%;
+}
+
+h1{
+  padding-left: 5em;
+}
+
+#sidebarhome h2:not(#stampa), #sidebarhome ul, #nav, #accesso{
+  display: none;
+}
+
+#sidebarhome{
+  margin: 0 auto;
+}
+
+#sidebarhome h2{
+    text-shadow: none;
+}
+
+#sidebarpiante{
+  display: none;
+}
+#content, #content_form{
+  width: 100%;
+  padding: 1em;
+  margin-left: 0;
+  border: 0;
+}
+
+#pianta img{
+  width: 50%;
+}
+
+#piante li a{
+  color: #000;
+}
+
+.dtesterno{
+  color: #000;
+}
+#blocco_d{
+  margin-top: 3em;
+}
+#intro{
+  margin: 0;
+  margin-right: 3%;
+  padding: 0;
+}
+
+#intro img{
+  padding: 0;
+  margin-right: 3%;
+}
+
+.bottone{
+  display: none;
+}
+
+#tornasu, #indietro{
+  display: none;
+}
+
+
+#footer p, .testoimg{
+  color: #000;
+}

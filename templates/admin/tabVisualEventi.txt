@@ -1,0 +1,25 @@
+		<div id="content_admin">
+
+			<h2>Eventi in corso</h2>
+			<div>
+				<table summary="La tabella elenca gli eventi attuali e associa a ciascuno un pulsante per cancellarlo. Ogni evento è dotata di un numero identificatore, un nome, le date di inizio e fine, e il pulsante per cancellarlo">
+				<caption>Eventi</caption>
+					<thead>
+						<tr>
+							<th scope="col" abbr="id">Identificatore</th>
+							<th scope="col">Nome</th>
+							<th scope="col">Inizio</th>
+							<th scope="col">Fine</th>
+							<th scope="col" abbr="cancella">Cancella l'evento</th>
+						</tr>
+					</thead>
+					<tbody>
+						corpoTabella
+					</tbody>
+				</table>
+			</div>
+
+			
+			<p id="indietro"><a href= "adminPanel.php" accesskey="b">Torna al menu precedente (b)</a></p>
+
+		</div><!-- CONTENT -->

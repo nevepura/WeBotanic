@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it" >
+	<head>
+		<title>Inserimento Notizia - WeBotanic - Orto Botanico di Belluno</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="description" content="Inserimento notizie dell'orto botanico WeBotanic di Belluno"/>
+		<meta name="keywords" content=""/>
+		<meta name="author" content="WeBotanics"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="robots" content="noindex"/>
+		<link rel="shortcut icon" href="images/logo.png"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main_mid.css" media="screen and (min-width:768px) and (max-width:1024px), only screen and (min-device-width:768px) and (max-device-width:1024px)" />
+		<link rel="stylesheet" type="text/css" href="css/main_small.css" media="handheld, screen and (max-width: 767px), only screen and (max-device-width:767px)"/>
+	   <script type="text/javascript" src="js/insAdmin.js"></script>
+    </head>
+	<body onload="caricamentoNotizia()">
+		<div id="header">
+		    <img id="logo" src="images/logo.png" alt="Logo WeBotanic di Belluno"/>
+		    <h1>Webotanic</h1>
+		    <div id="accesso">
+			    <p>Accesso eseguito</p>
+		   	</div>
+		</div>
+		<div id="breadcrumb">
+		    <p>Ti trovi in: Inserimento Notizie</p>
+		</div>
+
+		<div id="content_admin">
+
+            messaggio
+			<form enctype="multipart/form-data" action="php/checkNotizia.php" method="post" id="formNotizie">
+				<fieldset>
+					<legend>Intestazione</legend>
+					<div>
+						<label for="titolo">Titolo</label>
+						<input class="defaultadmin" type="text" name="titolo" id="titolo"  />
+					</div>
+					<div>
+						<label for="giorno">Giorno</label>
+						<select class="defaultadmin" id="giorno" name="giorno" >
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+						</select>
+
+						<label for="mese">Mese</label>
+						<select class="defaultadmin" id="mese" name ="mese" >
+							<option value="01">Gennaio</option>
+							<option value="02">Febbraio</option>
+							<option value="03">Marzo</option>
+							<option value="04">Aprile</option>
+							<option value="05">Maggio</option>
+							<option value="06">Giugno</option>
+							<option value="07">Luglio</option>
+							<option value="08">Agosto</option>
+							<option value="09">Settembre</option>
+							<option value="10">Ottobre</option>
+							<option value="11">Novembre</option>
+							<option value="12">Dicembre</option>
+						</select>
+
+
+						<label for="anno">Anno</label>
+						<select class="defaultadmin" id="anno" name="anno">
+							<option value="2017">2017</option>
+							<option value="2018">2018</option>
+							<option value="2019">2019</option>
+							<option value="2020">2020</option>
+						</select>
+
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Corpo</legend>
+					<label for="testoins" >Testo<br/></label>
+					<textarea class="defaultadmin" id="testoins" name="testo" rows="15" cols="90"></textarea>
+				</fieldset>
+
+                <fieldset id="input_img">
+                    <label for="immagine">Immagine (massimo 300 <acronym title=" kilobyte">KB</acronym>)</label>
+				    <input type="file" name="immagine" id="immagine"  />
+				</fieldset>
+				<fieldset>
+					<label for="alt" >Testo alternativo dell'immagine</label>
+					<input type="text" class="defaultadmin" id="alt" name="alt"/>
+				</fieldset>
+				<fieldset id="bottoni">
+					<input type="submit" id="submit" name="submit" value="Carica notizia" />
+					<input type="reset" id="reset" value="Resetta" />
+				</fieldset>
+			</form>
+
+			<p id="tornasu"><a href= "#header">Torna a inizio pagina</a></p>
+			<p id="indietro"><a href= "adminPanel.php" accesskey="b">Torna al <span xml:lang="fr">menu</span> precedente (b)</a></p>
+		</div><!-- CONTENT -->
+	</body>
+</html>

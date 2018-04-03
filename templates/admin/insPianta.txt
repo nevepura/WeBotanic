@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it" >
+	<head>
+		<title>Inserimento Pianta - WeBotanic - Orto Botanico di Belluno</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="description" content="Inserimento piante dell'orto botanico WeBotanic di Belluno"/>
+		<meta name="keywords" content=""/>
+		<meta name="author" content="WeBotanics"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="robots" content="noindex"/>
+		<link rel="shortcut icon" href="images/logo.png"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main_mid.css" media="screen and (min-width:768px) and (max-width:1024px), only screen and (min-device-width:768px) and (max-device-width:1024px)" />
+		<link rel="stylesheet" type="text/css" href="css/main_small.css" media="handheld, screen and (max-width: 767px), only screen and (max-device-width:767px)"/>
+		<script type="text/javascript" src="js/insAdmin.js"></script>
+	</head>
+	<body onload="caricamentoPianta()">
+		<div id="header">
+		    <img id="logo" src="images/logo.png" alt="Logo WeBotanic di Belluno"/>
+		    <h1>Webotanic</h1>
+		    <div id="accesso">
+			    <p>Accesso eseguito</p>
+		   	</div>
+		</div>
+		<div id="breadcrumb">
+		    <p>Ti trovi in: Inserimento Piante</p>
+		</div>
+
+		<div id="content_admin">
+            {messaggio}
+			 <h2> La seguente form serve ad inserire una nuova pianta nel sito e la sua compilazione segue le prossime istruzioni: </h2>
+				<ul id="aiutiform">
+				<li> Tutti i campi marcati come "obbligatori" devono essere compilati </li>
+				<li> Nei campi in cui è richiesta l'immissione di un nome o di un colore, sono ammesse solo parole composte da un minimo di 3 a un massimo di 30 lettere non accentante, nessun numero nè simbolo verrà accettato </li>
+				<li> Nei campi in cui è richiesta l'immissione di un numero, sono ammesse solo cifre numeriche a comporre un numero maggiore di 0 </li>
+				<li> I campi riguardanti fusto, radice, foglia, fiore e frutto non sono selezionabili per alcuni gruppi di appartenenza della pianta</li>
+				</ul>
+			<form action="php/checkPianta.php" method="post" enctype="multipart/form-data" >
+				<fieldset class="ins_piante">
+					<legend> Informazioni generali </legend>
+					<div>
+						<label for="NomeScientifico">Inserire nome <span class="elegante"> scientifico </span> (obbligatorio) </label>
+						<input class="defaultadmin" type="text" id="NomeScientifico" name="NomeScientifico"  />
+					</div>
+					<div>
+						<label for="NomeComune">Inserire nome <span class="elegante"> comune </span> (obbligatorio) </label>
+						<input class="defaultadmin" type="text" id="NomeComune" name="NomeComune"  />
+					</div>
+					<div>
+						<label for="NumEsemplari">Inserire numero esemplari introdotti (obbligatorio) </label>
+						<input class="defaultadmin" type="text" id="NumEsemplari" name="NumEsemplari"  />
+					</div>
+					<div>
+						<label for="AltezzaCm">Inserire altezza in centimetri (obbligatorio) </label>
+						<input class="defaultadmin" type="text" id="AltezzaCm" name="AltezzaCm"  />
+					</div>
+					<div>
+						<label for="Gruppo">Scegliere un gruppo di appartenenza (obbligatorio) </label>
+						<select class="defaultadmin" id="Gruppo" name="Gruppo">
+							<option value="A" >Alga</option>
+							<option value="B" >Briofita</option>
+							<option value="TP" >Trachoetofita Pteridofita</option>
+							<option selected="selected" value="TSA" >Tracheotofita Spermatofita Angiosperma</option>
+							<option  value="TSG">Tracheotofita Spermatofita Gimnosperma</option>
+						</select>
+					</div>
+					<div>
+						<label for="Fusto">Scegliere tipo di fusto </label>
+						<select class="defaultadmin" id="Fusto" name="Fusto">
+                            <option value="">Nessuno</option>
+							<option value="Eretto">Eretto</option>
+							<option value="Rampicante">Rampicante</option>
+							<option value="Strisciante">Strisciante</option>
+							<option value="Rampante">Rampante</option>
+						</select>
+					</div>
+					<div>
+						<label for="radice">Scegliere tipo di radice </label>
+						<select class="defaultadmin" id="radice" name="Radice">
+                        <option value="">Nessuna</option>
+						<option value="Ramosa">Ramosa</option>
+						<option value="Tuberiforme">Tuberiforme</option>
+						<option value="Fascicolata">Fascicolata</option>
+						<option value="A Fittone">A fittone</option>
+						<option value="Avventizia">Avventizia</option>
+						<option value="Aerea">Aerea</option>
+					  </select>
+					</div>
+				</fieldset>
+				<fieldset class="ins_piante">
+					<legend>Foglia </legend>
+					<div>
+						<label for="forma"> Forma </label>
+						<select class="defaultadmin" id="forma" name="Forma">
+                                 <option value="">Nessuna</option>
+						         <option value="Aghiforme">Aghiforme</option>
+					             <option value="Falcata">Falcata</option>
+					             <option value="Orbicolare">Orbicolare</option>
+					             <option value="Romboidale">Romboidale</option>
+					             <option value="Acuminata">Acuminata</option>
+					             <option value="Flabellata">Flabellata</option>
+					             <option value="Ovata">Ovata</option>
+					             <option value="Rosetta">Rosetta</option>
+					             <option value="Alternata">Alternata</option>
+					             <option value="Astata">Astata</option>
+					             <option value="Palmata">Palmata</option>
+					             <option value="Spatolata">Spatolata</option>
+					             <option value="Aristata">Aristata</option>
+					             <option value="Lanceolata">Lanceolata</option>
+					             <option value="Pedata">Pedata</option>
+					             <option value="Sagittata">Sagittata</option>
+					             <option value="Bipennata">Bipennata</option>
+					             <option value="Lineare">Lineare</option>
+					             <option value="Peltata">Peltata</option>
+					             <option value="Lesiniforme">Lesiniforme</option>
+					             <option value="Cordata">Cordata</option>
+					             <option value="Lobulata">Lobulata</option>
+					             <option value="Amplessicaule">Amplessicaule</option>
+					             <option value="Tripartita">Tripartita</option>
+					             <option value="Cuneiforme">Cuneiforme</option>
+					             <option value="Obcordata">Obcordata</option>
+					             <option value="Impari-pennata">Impari-pennata</option>
+					             <option value="Tripennata">Tripennata</option>
+					             <option value="Triangolare">Triangolare</option>
+					             <option value="Obovata">Obovata</option>
+					             <option value="Paripennata">Paripennata</option>
+					             <option value="Troncata">Troncata</option>
+					             <option value="Digitata">Digitata</option>
+					             <option value="Ottusa">Ottusa</option>
+					             <option value="Pennatisecta">Pennatisecta</option>
+					             <option value="Intera">Intera</option>
+					             <option value="Ellittica">Ellittica</option>
+					             <option value="Opposte">Opposte</option>
+					             <option value="Reniforme">Reniforme</option>
+					             <option value="Verticillata">Verticillata</option>
+					 </select>
+					</div>
+					<div>
+						<label for="composizione"> Composizione </label>
+						<select class="defaultadmin" id="composizione" name="Composizione">
+                         <option value="">Nessuna</option>
+						 <option value="Composta"> Composta </option>
+						 <option value="Semplice"> Semplice </option>
+					 </select>
+					</div>
+					<div>
+						<label for="margine"> Margine </label>
+						<select class="defaultadmin" id="margine" name="Margine">
+                            <option value="">Nessuno</option>
+						  <option value="Ciliato">Ciliato</option>
+					    <option value="Crenato">Crenato</option>
+					    <option value="Dentato">Dentato</option>
+					    <option value="Denticolato">Denticolato</option>
+					    <option value="Doppiamente dentato">Doppiamente dentato</option>
+					    <option value="Intero">Intero</option>
+					    <option value="Lobato">Lobato</option>
+					    <option value="Seghettato">Seghettato</option>
+					    <option value="Finemente seghettato">Finemente seghettato</option>
+					    <option value="Sinuato">Sinuato</option>
+					    <option value="Spinoso">Spinoso</option>
+					    <option value="Ondulato">Ondulato</option>
+					 </select>
+					</div>
+					<div>
+						<label for="superficie"> Superficie </label>
+						<select class="defaultadmin" id="superficie" name="Superficie">
+                            <option value="">Nessuna</option>
+						 <option value="Coriacea"> Coriacea </option>
+						 <option value="Tomentosa"> Tomentosa </option>
+						  <option value="Scabra"> Scabra </option>
+					 </select>
+					</div>
+
+				</fieldset>
+				<fieldset class="ins_piante">
+					<legend>Fiore </legend>
+					<div>
+						<label for="nome"> Nome </label>
+						<input class="defaultadmin" type="text" id="nome" name="NomeFiore" />
+					</div>
+					<div>
+						<label for="colore"> Colore </label>
+						<input class="defaultadmin" type="text" id="colore" name="ColoreFiore" />
+					</div>
+					<div>
+						<label for="num_petali"> Numero petali </label>
+						<input class="defaultadmin" type="text" id="num_petali" name="NumPetali" />
+					</div>
+				</fieldset>
+				<fieldset class="ins_piante">
+					<legend>Frutto </legend>
+					<div>
+						<label for="nome_fr"> Nome </label>
+						<input class="defaultadmin" type="text" id="nome_fr" name="NomeFrutto" />
+					</div>
+					<div>
+						<label for="colore_fr"> Colore </label>
+						<input class="defaultadmin" type="text" id="colore_fr" name="ColoreFrutto" />
+					</div>
+				</fieldset>
+				<fieldset class="ins_piante">
+				<legend>Utilizzo (obbligatorio almeno uno) </legend>
+					<div>
+						<label for="alimentare"> Alimentare </label>
+						<input class="defaultadmin" type="checkbox" id="alimentare" name="Utilizzo[]" value="Alimentare"/>
+					</div>
+					<div>
+						<label for="farmacologico"> Farmacologico </label>
+						<input class="defaultadmin" type="checkbox" id="farmacologico" name="Utilizzo[]" value="Farmacologico"/>
+					</div>
+					<div>
+						<label for="tessile"> Tessile </label>
+						<input class="defaultadmin" type="checkbox" id="tessile" name="Utilizzo[]" value="Tessile"/>
+					</div>
+					<div>
+						<label for="aromatico"> Aromatico </label>
+						<input class="defaultadmin" type="checkbox" id="aromatico" name="Utilizzo[]" value="Aromatico"/>
+					</div>
+					<div>
+						<label for="legname"> Legname </label>
+						<input class="defaultadmin" type="checkbox" id="legname" name="Utilizzo[]" value="Legname"/>
+					</div>
+					<div>
+						<label for="ornamentale"> Ornamentale </label>
+						<input class="defaultadmin" type="checkbox" id="ornamentale" name="Utilizzo[]" value="Ornamentale"/>
+					</div>
+				</fieldset>
+				<fieldset class="ins_piante">
+					<legend>Principio </legend>
+						<div>
+						 <label for="flavonoidi"> Flavonoidi </label>
+						 <input class="defaultadmin" type="checkbox" id="flavonoidi" name="Principio[]" value="Flavonoidi"/>
+					 </div>
+					<div>
+					   <label for="acidi_diterpenici"> Acidi Diterpenici </label>
+						 <input class="defaultadmin" type="checkbox" id="acidi_diterpenici" name="Principio[]" value="Acidi Diterpenici"/>
+					</div>
+					<div>
+					   <label for="olio_essenziale"> Olio Essenziale </label>
+						 <input class="defaultadmin" type="checkbox" id="olio_essenziale" name="Principio[]" value="Olio Essenziale"/>
+					</div>
+					<div>
+					   <label for="terpinolo"> Terpinolo </label>
+						 <input class="defaultadmin" type="checkbox" id="terpinolo" name="Principio[]" value="Terpinolo"/>
+					</div>
+					<div>
+						 <label for="cineolo"> Cineolo </label>
+						 <input class="defaultadmin" type="checkbox" id="cineolo" name="Principio[]" value="Cineolo"/>
+					</div>
+				</fieldset>
+				<fieldset class="ins_piante">
+						<legend> Bioma (obbligatorio almeno uno)</legend>
+						<div>
+						 <label for="pacifico">Oceano Pacifico</label>
+						 <input type="checkbox" name="BiomaA[]" id="pacifico" value="Oceano Pacifico"/>
+					 </div>
+					 <div>
+						 <label for="indiano">Oceano Indiano</label>
+						 <input type="checkbox" name="BiomaA[]" id="indiano" value="Oceano Indiano"/>
+					 </div>
+					 <div>
+						 <label for="mississipi">Fiume Mississipi</label>
+						 <input type="checkbox" name="BiomaA[]" id="mississipi" value="Fiume Mississipi"/>
+					 </div>
+					 <div>
+						 <label for="monsonica">Foresta Monsonica</label>
+						 <input type="checkbox" name="BiomaT[]" id="monsonica" value="Foresta Monsonica"/>
+					 </div>
+					 <div>
+						 <label for="temperata">Foresta Temperata</label>
+						 <input type="checkbox" name="BiomaT[]" id="temperata" value="Foresta Temperata"/>
+					 </div>
+					 <div>
+						 <label for="mediterranea">Macchia Meditteranea</label>
+						 <input type="checkbox" name="BiomaT[]" id="mediterranea" value="Macchia Mediterranea"/>
+					 </div>
+				</fieldset>
+				<fieldset class="ins_piante">
+					<legend> Stato (obbligatorio almeno uno) </legend>
+					<div>
+					 <label for="australia">Australia</label>
+					 <input type="checkbox" name="Stato[]" id="australia" value="Australia"/>
+				  </div>
+				 <div>
+					 <label for="cina">Cina</label>
+					 <input type="checkbox" name="Stato[]" id="cina" value="Cina"/>
+				 </div>
+				 <div>
+					 <label for="francia">Francia</label>
+					 <input type="checkbox" name="Stato[]" id="francia" value="Francia"/>
+				 </div>
+				 <div>
+					 <label for="germania">Germania</label>
+					 <input type="checkbox" name="Stato[]" id="germania" value="Germania"/>
+				 </div>
+				 <div>
+					 <label for="giappone">Giappone</label>
+					 <input type="checkbox" name="Stato[]" id="giappone" value="Giappone"/>
+				 </div>
+				</fieldset>
+				<fieldset>
+					<div>
+						<label for="img">Immagine (massimo 300 <acronym title=" kilobyte">KB</acronym>)</label>
+						<input type="file" id="img" name="immagine" value="Sfoglia" />
+					</div>
+				</fieldset>
+				<fieldset>
+					<label for="alt">Testo alternativo dell'immagine</label>
+					<input class="defaultadmin" type="text" id="alt" name="Alt" value="" />
+				</fieldset>
+				<fieldset>
+					<label for="testoins">Descrizione</label>
+					<textarea class="defaultadmin" id="testoins" name="Descrizione" rows="15" cols="50"></textarea>
+				</fieldset>
+				<fieldset id="bottoni">
+					<input type="submit" id="submit" value="Carica Pianta" onclick= "return controllaChecks()"/>
+					<input type="reset" id="reset" value="Resetta" />
+				</fieldset>
+			</form>
+			<p id="tornasu"><a href= "#header">Torna a inizio pagina</a></p>
+			<p id="indietro"><a href= "adminPanel.php" accesskey="b">Torna al <span xml:lang="fr">menu</span> precedente (b)</a></p>
+		</div><!-- CONTENT -->
+	</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it" >
+	<head>
+		<title>Pannello Amministratore - WeBotanic - Orto Botanico di Belluno</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="description" content="Pannello di amministrazione dell'orto botanico WeBotanic di Belluno"/>
+		<meta name="keywords" content=""/>
+		<meta name="author" content="WeBotanics"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="robots" content="noindex"/>
+		<link rel="shortcut icon" href="images/logo.png"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main_mid.css" media="screen and (min-width:768px) and (max-width:1024px), only screen and (min-device-width:768px) and (max-device-width:1024px)" />
+		<link rel="stylesheet" type="text/css" href="css/main_small.css" media="handheld, screen and (max-width: 767px), only screen and (max-device-width:767px)"/>
+	</head>
+	<body>
+		<div id="header">
+		    <img id="logo" src="images/logo.png" alt="Logo WeBotanic di Belluno"/>
+		    <h1>Webotanic</h1>
+		    <div id="accesso">
+			    <p>Accesso eseguito</p>
+		   	</div>
+		</div>
+
+		<div id="breadcrumb">
+		    <p>Ti trovi in: Pannello Amministratore</p>
+		</div>
+
+		<div id="content_adminpanel">
+			<h2>Sei nel pannello di amministrazione di Webotanic. Da qui puoi gestire notizie, eventi  e piante del sito.</h2>
+			<div>
+				<ul>
+					<li><a href="insNotizia.php">Inserisci una nuova notizia</a></li>
+					<li><a href="insEvento.php">Inserisci un nuovo evento</a></li>
+					<li><a href="insPianta.php"> Inserisci una nuova pianta</a></li>
+				</ul>
+			</div>
+		    <div>
+				<ul>
+					<li><a href="visualNotizie.php"> Visualizza le notizie </a></li>
+					<li><a href="visualEventi.php"> Visualizza gli eventi </a></li>
+					<li><a href="visualPiante.php"> Visualizza le piante </a></li>
+					<li><a href="visualPrenotazioni.php"> Visualizza le prenotazioni </a></li>
+				</ul>
+			</div>
+			<!-- <p><a href="php/logout1.php">[TEMP] logout1</a></p> -->
+			<!-- <p><a href="php/verificaLogin.php">[TEMP] verifica login</a></p> -->
+			<p id="logout"><a href="php/logout1.php" accesskey="q">Effettua <span xml:lang="en">logout</span> ed esci dal pannello (q)</a></p>
+		</div><!-- CONTENT -->
+
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it" >
+	<head>
+		<title>Prenotazioni - WeBotanic - Orto Botanico di Belluno</title>
+		<meta http-equiv="Content-Type" content="text/html ;charset=UTF-8" />
+		<meta name="description" content="pagina prenotazioni dell'orto botanico WeBotanic di Belluno"/>
+		<meta name="keywords" content="orto, giardino, botanico, Belluno, piante, alberi, cultura, visite, prenotazioni"/>
+		<meta name="author" content="WeBotanics"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="shortcut icon" href="images/logo.png"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main_mid.css" media="screen and (min-width:768px) and (max-width:1024px), only screen and (min-device-width:768px) and (max-device-width:1024px)" />
+		<link rel="stylesheet" type="text/css" href="css/main_small.css" media="handheld, screen and (max-width: 767px), only screen and (max-device-width:767px)"/>
+		<link rel="stylesheet" type="text/css" href="css/main_stampa.css" media="print" />
+        <script type="text/javascript" src="js/prenotazione.js"></script>
+	</head>
+	<body>
+		<div id="header">
+		    <img id="logo" src="images/logo.png" alt="Logo WeBotanic di Belluno"/>
+		    <h1>Webotanic</h1>
+
+		</div>
+		<div id="nav">
+		    <ul>
+		        <li><a href="index.php"><span xml:lang="en">Home</span></a></li>
+		        <li><a href="storia.html">Storia</a></li>
+		        <li><a href="piante.php">Piante</a></li>
+		        <li>Prenotazioni</li>
+		        <li><a href="informazioni.html">Informazioni</a></li>
+		    </ul>
+		</div>
+		<div id="breadcrumb">
+		    <p>Ti trovi in: Prenotazioni</p>
+		</div>

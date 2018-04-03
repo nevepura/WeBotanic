@@ -1,0 +1,122 @@
+#sidebarpiante{
+  margin-left: 1%;
+  padding: 1em;
+  float: none;
+  width: 90%;
+}
+
+
+#filtri{
+display: none;
+}
+
+
+#labelfiltri:hover{
+  font-weight: bold;
+}
+
+#menucomparsa{
+  display: block;
+}
+
+#filtri:target{
+  display: block;
+  margin-bottom: 1em;
+}
+
+#labelfiltri{
+  display: block;
+  padding: 1em;
+  margin-top: 1em;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+#sidebarpiante fieldset{
+  margin-bottom: 0;
+}
+
+
+#nav li a, #nav li span{
+  display: block;
+  padding: 0;
+}
+
+#nav li, #nav {
+  width: 99%;
+}
+
+#nav li{
+  -webkit-border-radius: 0 0 0 0;
+  border-radius: 0 0 0 0;
+}
+
+#nav{
+  margin: auto;
+}
+
+#logo {
+ width: 3.5em;
+ height: 3.5em;
+ margin: 0;
+
+}
+
+h1{
+  margin-left: 1em;
+  padding-top: 0.5em;
+}
+
+#content, #content_form{
+  width: 90%;
+  margin: auto;
+}
+
+#sidebarhome{
+  display: none;
+}
+
+#breadcrumb{
+  font-size: small;
+  margin-left: 1%;
+}
+
+#intro img{
+  width: 100%;
+}
+
+#elencohome li:not(#noimg){
+  width: 100%;
+  margin-bottom: 1em;
+}
+#noimg{
+  margin: 0;
+}
+
+#noimg a{
+  display: block;
+  margin: 1em auto;
+  width: 80%;
+}
+
+
+
+#piante li{
+  margin-right: 0;
+  padding: 0.2em 0;
+}
+
+#immaginePianta img{
+  width: 90%;
+}
+
+#tornasu{
+  margin-top: 1em;
+}
+
+#footer{
+  line-height: 1.25;
+  padding: 0.7em 0;
+}

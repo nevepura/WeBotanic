@@ -1,0 +1,21 @@
+
+		<h2>Prenotazioni presenti attualmente (ordinate per data)</h2>
+
+        <table summary="La tabella elenca le prenotazioni effettuate dal sito. Ogni prenotazione è dotata di un numero identificatore, un intestatario, il tipo di biglietto corrispondente e la data per la quale la prenotazione vale" >
+            <caption>Prenotazioni</caption>
+            <thead>
+                <tr> <!-- intestazione -->
+                    <th scope="col">Id</th>
+                    <th scope="col">Intestatario</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Data</th>
+                </tr>
+            </thead>
+            <tbody>
+                corpoTabella
+			</tbody>
+        </table>
+
+        <p id="indietro"><a href= "adminPanel.php" accesskey="b">Torna al menu precedente (b)</a></p>
+
+</div><!-- CONTENT_ADMIN -->

@@ -1,0 +1,50 @@
+#sidebarpiante{
+  margin-left: 1%;
+  padding: 1em;
+  float: none;
+  margin: auto;
+  width: 90%;
+}
+
+#sidebarpiante fieldset{
+  display: inline-block;
+  width: 20%;
+}
+
+
+#filtri{
+  display: inline;
+}
+
+.filtro{
+  width: 100%;
+  margin: 0;
+}
+
+#sidebarhome{
+  position: absolute;
+  right: 100%;
+}
+
+#logo{
+  margin-left: 1%;
+
+}
+
+h1{
+  margin-left: 4em;
+}
+
+#nav{
+  margin-left: 8.5%;
+}
+
+
+#content, #content_form{
+  width: 80%;
+  margin: auto;
+}
+
+#intro img{
+  margin-left: 0.5em;
+}

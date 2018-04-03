@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it" >
+	<head>
+		<title>Piante - WeBotanic - Orto Botanico di Belluno</title>
+		<meta http-equiv="Content-Type" content="text/html ;charset=UTF-8" />
+		<meta name="description" content="pagina delle piante dell'orto botanico WeBotanic di Belluno"/>
+		<meta name="keywords" content="orto, giardino, botanico, Belluno, piante, alberi, cultura, visite"/>
+		<meta name="author" content="WeBotanics"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="shortcut icon" href="images/logo.png"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main_mid.css" media="screen and (min-width:768px) and (max-width:1024px), only screen and (min-device-width:768px) and (max-device-width:1024px)" />
+		<link rel="stylesheet" type="text/css" href="css/main_small.css" media="handheld, screen and (max-width: 767px), only screen and (max-device-width:767px)"/>
+		<link rel="stylesheet" type="text/css" href="css/main_stampa.css" media="print" />
+
+	</head>
+	<body>
+		<div id="header">
+		    <img id="logo" src="images/logo.png" alt="Logo WeBotanic di Belluno"/>
+		    <h1>Webotanic</h1>
+		</div>
+		<div id="nav">
+		    <ul>
+		        <li><a href="index.php"><span xml:lang="en">Home</span></a></li>
+		        <li><a href="storia.html">Storia</a></li>
+		        <li>Piante</li>
+		        <li><a href="prenotazioni.php">Prenotazioni</a></li>
+		        <li><a href="informazioni.html">Informazioni</a></li>
+		    </ul>
+		</div>
+
+		<div id="breadcrumb">
+		    <p>Ti trovi in: Piante</p>
+		</div>
+
+    	<div id="sidebarpiante">
+
+		    <form action="ricercaPiante.php" method="post">
+                <fieldset id="search">
+                    <legend>Ricerca per nome:</legend>
+						<label for="ricerca">Cerca:</label>
+						<input type="text" name="ricerca" id="ricerca" />
+
+                </fieldset>
+
+				<p><a id="menucomparsa" href="#filtri"> Mostra i filtri </a></p>
+
+				<div id="filtri">
+	             	<p id="salta"><a href="#submit">Salta i filtri</a></p>
+
+					<p id="filtraper">Filtra per:</p>
+					<fieldset>
+						<legend>Bioma</legend>
+						<div class="filtro">
+							<div>
+								<input type="checkbox" name="Bioma[]" id="pacifico" value="Oceano Pacifico"/>
+								<label for="pacifico">Oceano Pacifico</label>
+							</div>
+							<div>
+								<input type="checkbox" name="Bioma[]" id="indiano" value="Oceano Indiano"/>
+								<label for="indiano">Oceano Indiano</label>
+							</div>
+		                    <div>
+			                    <input type="checkbox" name="Bioma[]" id="mississipi" value="Fiume Mississipi"/>
+			                    <label for="mississipi">Fiume Mississipi</label>
+		                    </div>
+							<div>
+								<input type="checkbox" name="Bioma[]" id="monsonica" value="Foresta Monsonica"/>
+								<label for="monsonica">Foresta Monsonica</label>
+							</div>
+		                    <div>
+			                    <input type="checkbox" name="Bioma[]" id="temperata" value="Foresta Temperata"/>
+			                    <label for="temperata">Foresta Temperata</label>
+		                    </div>
+							<div>
+								<input type="checkbox" name="Bioma[]" id="mediterranea" value="Macchia Mediterranea"/>
+								<label for="mediterranea">Macchia Mediterranea</label>
+							</div>
+						</div>
+					</fieldset>
+
+					<fieldset>
+						<legend>Utilizzo</legend>
+						<div class="filtro">
+							<div >
+								<input type="checkbox" name="Utilizzo[]" id="alimentare" value="Alimentare"/>
+								<label for="alimentare">Alimentare</label>
+							</div>
+							<div >
+								<input type="checkbox" name="Utilizzo[]" id="farmacologico" value="Farmacologico"/>
+								<label for="farmacologico">Farmacologico</label>
+							</div>
+							<div >
+								<input type="checkbox" name="Utilizzo[]" id="tessile" value="Tessile"/>
+								<label for="tessile">Tessile</label>
+							</div>
+							<div >
+								<input type="checkbox" name="Utilizzo[]" id="aromatico" value="Aromatico"/>
+								<label for="aromatico">Aromatico</label>
+							</div>
+							<div >
+								<input type="checkbox" name="Utilizzo[]" id="legname" value="Legname"/>
+								<label for="legname">Legname</label>
+							</div>
+							<div >
+								<input type="checkbox" name="Utilizzo[]" id="ornamentale" value="Ornamentale"/>
+								<label for="ornamentale">Ornamentale</label>
+							</div>
+						</div>
+					</fieldset>
+	        		<fieldset>
+						<legend>Principi</legend>
+						<div class="filtro">
+							<div>
+								<input type="checkbox" name="Principio[]" id="Flavonoidi" value="Flavonoidi"/>
+								<label for="Flavonoidi">Flavonoidi</label>
+							</div>
+							<div>
+								<input type="checkbox" name="Principio[]" id="acidiDiterpenici" value="Acidi Diterpenici"/>
+								<label for="acidiDiterpenici">Acidi Diterpenici</label>
+							</div>
+							<div>
+								<input type="checkbox" name="Principio[]" id="Terpinolo" value="Terpinolo"/>
+								<label for="Terpinolo">Terpinolo</label>
+							</div>
+							<div>
+								<input type="checkbox" name="Principio[]" id="Cineolo" value="Cineolo"/>
+								<label for="Cineolo">Cineolo</label>
+							</div>
+							<div>
+								<input type="checkbox" name="Principio[]" id="olioEssenziale" value="Olio Essenziale"/>
+								<label for="olioEssenziale">Olio Essenziale</label>
+							</div>
+						</div>
+					</fieldset>
+				</div><!-- filtri -->
+				    <fieldset>
+				    	<legend>Conferma</legend>
+				      	<input type="submit" name="submit" value="Conferma" id="submit"/>
+				    </fieldset>
+
+			</form>
+    	</div><!-- sidebarpiante -->
+
+        <div id="content">

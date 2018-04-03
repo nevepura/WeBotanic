@@ -1,0 +1,11 @@
+</div>
+		<div id="footer">
+			<p id="accesso"><a href="adminLogin.php">Accedi come amministratore</a></p>
+			<p>Per informazioni: info@webotanic.com</p>
+			<p>Realizzato da: Federico Bicciato, Federico Caldart, Mirko Gibin</p>
+			<p><span xml:lang="en">All Rights Reserved</span></p>
+			<img id="validhtml" src="images/valid-xhtml10.png" alt="Codice xhtml valido"/>
+			<img id="validcss" src="images/valid-css.gif" alt="Codice css valido"/>
+		</div>
+	</body>
+</html>

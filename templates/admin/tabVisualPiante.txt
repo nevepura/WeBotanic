@@ -1,0 +1,21 @@
+<div id="content_admin">
+		<h2>Piante presenti nell'Orto Botanico</h2>
+
+	   <table summary="La tabella elenca le piante presenti nell'Orto Botanico. I dati rilevanti che si rappresentano per ogni pianta sono il nome scientifico, il nome comune e il numero di esemplari presenti per pianta." >
+		  <caption>Piante</caption>
+            <thead>
+                <tr> <!-- intestazione -->
+                    <th scope="col" abbr="enne esse">Nome Scientifico</th>
+                    <th scope="col" abbr="enne ci">Nome Comune</th>
+                    <th scope="col" abbr="numero">Numero di Esemplari</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+				  corpoTabella
+			</tbody>
+        </table>
+
+        <p id="indietro"><a href= "adminPanel.php" accesskey="b">Torna al menu precedente (b)</a></p>
+
+</div><!-- CONTENT -->

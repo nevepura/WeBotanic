@@ -1,0 +1,21 @@
+<div id="content_admin">
+		<h2>Notizie presenti attualmente</h2>
+
+	   <table summary="La tabella elenca le notizie presenti nel sito e associa a ciascuna notizia un pulsante per cancellarla. Ogni notizia è dotata di un numero identificatore, un titolo, la data e il pulsante di cancellarla" >
+		  <caption>Notizie</caption>
+            <thead>
+                <tr> <!-- intestazione -->
+                    <th scope="col">Id</th>
+                    <th scope="col">Titolo</th>
+                    <th scope="col">Data</th>
+                    <th scope="col" abbr="cancella">Cancella la notizia</th>
+                </tr>
+            </thead>
+            <tbody>
+				  corpoTabella
+			</tbody>
+        </table>
+
+        <p id="indietro"><a href= "adminPanel.php" accesskey="b">Torna al menu precedente (b)</a></p>
+
+</div><!-- CONTENT -->

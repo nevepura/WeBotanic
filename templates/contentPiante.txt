@@ -1,0 +1,33 @@
+
+
+        RicercaFallita
+
+    <div class="intro">
+           <p>In questa pagina è possibile ricercare e vedere le piante presenti nell'orto botanico e le loro caratteristiche. La ricerca semplice utilizza il nome della pianta; i filtri permettono di distinguere le piante secondo i biomi dove vivono, gli utilizzi che se ne fanno, e i principi attivi in esse contenuti.</p>
+	       <p>Le nostre serre non sono mai completamente piene. Siamo sempre pronti ad accettare nuovi esemplari. Ecco a seguito alcuni degli esemplari recentemente aggiunti all'esposizione.</p>
+    </div>
+
+        <h2>Alcuni esemplari di piante in esposizione:</h2>
+        <ul id="piante">
+            <li>
+                <a href="stampaPianta.php?nome=Eucalyptus">Eucalyptus
+                <img src="images/piante/eucalyptus.jpg" alt="pianta di Eucalyptus"/>
+                </a>
+            </li>
+
+            <li>
+                <a href="stampaPianta.php?nome=Cedrus_Libani">
+                Cedrus Libani
+                <img src="images/piante/cedruslibani.jpg" alt="pianta di Cedro del Libano"/>
+                </a>
+            </li>
+
+            <li>
+                <a href="stampaPianta.php?nome=Elaeocarpus_Angustifolius">
+                Elaeocarpus Angustifolius
+                <img src="images/piante/elaeocarpusangustifolius.jpg" alt="pianta di Elaeocarpus Angustifolius"/>
+                </a>
+            </li>
+        </ul>
+
+    <p id="tornasu"><a href= "#header">Torna a inizio pagina</a></p>
