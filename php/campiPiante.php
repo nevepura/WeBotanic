@@ -30,7 +30,7 @@ $frutto = [ 'NomeFrutto' => '',
 
 function insPost (&$array) {
     foreach($array as $col => $val)
-        if($val == '' && isset($_POST[$col])){
+        if($val == '' && isset($_POST[$col])) {
                $array[$col] = $_POST[$col];
         }
  }
